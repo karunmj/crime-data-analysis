@@ -29,6 +29,13 @@ plt.ylabel('Aggravated assault rate (offenses per 100,000 people')
 plt.plot(us_all_data['Year'], us_all_data['Aggravated assault rate'])
 plt.show()
 
+#get column headers using: list(us_all_data.columns.values)
+plt.title('Time series of total violent crimes across US')
+plt.xlabel('Year')
+plt.ylabel('Total violent crimes')
+plt.plot(us_all_data['Year'], us_all_data['Violent crime total'])
+plt.show()
+
 #list(utah_data.columns.values)
 plt.title('Time series of Robbery rate in Utah')
 plt.xlabel('Year')
