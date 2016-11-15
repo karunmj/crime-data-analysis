@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import requests
+import matplotlib.pyplot as plt
 
 #Utah specific data for 1960 - 2012, cleaning
 utah_data = pd.read_csv('CrimeStatebyUT.csv', skiprows = 5)[:-4] #skip footers werent working, manually ignored footer
@@ -13,6 +14,14 @@ us_2012_data = us_2012_data[['State', 'Population', 'Violent crime total', 'Murd
 #Coutry specific data for 1960 - 2012, 
 us_all_data = pd.read_csv('CrimeStatebyState_all.csv', skiprows = 5)[:-6]
 us_all_data = us_all_data[['Year', 'Population', 'Violent crime total', 'Murder and nonnegligent Manslaughter', 'Forcible rape', 'Robbery', 'Aggravated assault', 'Property crime total', 'Burglary', 'Larceny-theft', 'Motor vehicle theft', 'Violent Crime rate', 'Murder and nonnegligent manslaughter rate', 'Forcible rape rate', 'Robbery rate', 'Aggravated assault rate', 'Property crime rate', 'Burglary rate', 'Larceny-theft rate', 'Motor vehicle theft rate']]
+
+#get column headers using: list(us_all_data.columns.values)
+plt.title('Time series of xyz crime')
+plt.xlabel('Year')
+plt.ylabel('xyz crime number')
+plt.plot(us_all_data['Year'], us_all_data['Violent crime total'])
+plt.show()
+
 
 #Utah counties specific data,cleaning
 #TODO
