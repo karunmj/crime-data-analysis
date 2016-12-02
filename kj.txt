@@ -1,5 +1,8 @@
 Writeup on Section 3:
 Where is the crime? Does the crime rate vary significantly from area to area and over time?
+We looked to see how crime rate (both x and y) varied across the United States and how they changed temporally. This is important to see if all the regions followed the same national trend or a few regions were an anomaly, and what their drivers were. The below figure shows there was an increase in crime rate through the 90s and a drop afterwards. However, x and y region shows an increase through the late 90s. It may be argued that these regions saw in increase in net migration and exapansion during the same period which could explain the increased crime rate. The once big cities like Detroit and Baltimore saw a decrease in net population in the late 90s which may explain the reduced crime rates. 
+
+Fig. Timeline animation of crime rate (both x and y) across the United States from 19xy to 20xy 
 
 
 Data collection:
