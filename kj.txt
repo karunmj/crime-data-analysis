@@ -1,0 +1,10 @@
+Writeup on Section 3:
+Where is the crime? Does the crime rate vary significantly from area to area and over time?
+
+
+Data collection:
+Census - state wise - a number corresponding to statewide averages of poverty, income
+
+Poverty link to download cvs files http://www.census.gov/did/www/saipe
+Files for poverty as a percent and median household income for nation, per state and Cache county between 1989 - 2014 
+
